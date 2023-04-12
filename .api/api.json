@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "neon",
+      "source": "https://dfv3qgd2ykmrx.cloudfront.net/api_spec/release/v2.json",
+      "integrity": "sha512-CE0Mqygsui5/A9k4B9RkJlHV9aZz/l3o9/Kow+idRrxnRs0Kca8vYRJwi35Ip4fPpEkzw1a4c2z9yt/TKu+Seg==",
+      "installerVersion": "5.0.8"
+    }
+  ]
+}

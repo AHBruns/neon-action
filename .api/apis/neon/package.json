@@ -1,0 +1,11 @@
+{
+  "name": "@api/neon",
+  "version": "2.0.0",
+  "main": "./index.ts",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "api": "^5.0.8",
+    "json-schema-to-ts": "^2.7.2-beta.0",
+    "oas": "^20.5.4"
+  }
+}

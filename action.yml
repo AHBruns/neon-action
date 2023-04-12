@@ -1,11 +1,32 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Neon Action'
+description: 'Call Neon's API endpoints from your workflows.'
+author: 'Alex Bruns'
 inputs:
-  milliseconds: # change this
+  api_key: # change this
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'the neon api key to use'
+  method:
+    required: true
+    description: 'the API method to be call'
+  body:
+    required: true
+    description: 'the JSON body to send'
+    default: '{}'
+  metadata:
+    required: true
+    description: 'the JSON metadata to send'
+    default: '{}'
+  selector:
+    required: true
+    description: 'An optional JSONPath selector which will be run on the returned data. The result will be placed under the selection (single selection) and selections (multi selection) outputs.'
+    default: '$'
+outputs:
+  data:
+    description: 'the returned data'
+  selection:
+    description: 'the first value that matched the given JSONPath selector'
+  selections:
+    description: 'all values that matched the given JSONPath selector'
 runs:
   using: 'node16'
   main: 'dist/index.js'
